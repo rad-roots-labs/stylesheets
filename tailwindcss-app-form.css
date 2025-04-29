@@ -4,7 +4,7 @@
     }
 
     .entry-textarea-wrap {
-        @apply flex flex-row w-full px-2 items-center rounded-touch;
+        @apply flex flex-row w-full items-center rounded-touch;
     }
 
     .entry-line-wrap {
@@ -12,7 +12,7 @@
     }
 
     .el-textarea {
-        @apply w-full p-0 pl-2 py-3 rounded-touch text-[1rem];
+        @apply w-full p-0 pl-2 py-3 rounded-touch;
     }
 
     .el-textarea-layer-1:focus {
