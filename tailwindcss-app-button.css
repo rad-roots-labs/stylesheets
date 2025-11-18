@@ -1,20 +1,18 @@
-@layer components {
-    .button-submit {
-        @apply h-btn_line min-w-[82px] w-fit rounded-2xl active:bg-layer-1-surface_a;
-    }
-    
-    .button-simple {
-        @apply h-btn_line w-line;
-    }
-    
-    .button-base
-    .button-simple,
-    .button-submit {
-        @apply flex flex-row justify-center items-center font-mono text-sm lowercase transition-all select-none cursor-none;
-    }
-    
-    .button-simple,
-    .button-submit {
-        @apply bg-layer-1-surface text-layer-2-glyph;
-    }
+@utility button-submit {
+    @apply h-btn_line min-w-[82px] w-fit rounded-2xl active:bg-ly1_a;
+}
+
+@utility button-simple {
+    @apply h-btn_line w-line;
+}
+
+@utility button-base,
+@utility button-simple,
+@utility button-submit {
+    @apply flex flex-row justify-center items-center font-mono text-sm lowercase transition-all select-none cursor-none;
+}
+
+@utility button-simple,
+@utility button-submit {
+    @apply bg-ly1 text-ly2-gl;
 }

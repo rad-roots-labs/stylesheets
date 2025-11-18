@@ -1,33 +1,31 @@
-@layer base {
-    :root {
-        background-color: #000000;
-    }
+:root {
+    background-color: #000000;
+}
 
-    html {
-        @apply select-none cursor-none;
-    }
+html {
+    @apply select-none cursor-none;
+}
 
-    select:focus {
-        outline: none;
-    }
+select:focus {
+    outline: none;
+}
 
-    button:focus {
-        outline: none;
-    }
+button:focus {
+    outline: none;
+}
 
-    select {
-        appearance: none;
-        -webkit-appearance: none; 
-        -moz-appearance: none;
-        background: transparent; 
-        background-image: none; 
-      }
-      
-      select::-ms-expand {
-        display: none;
-      }
+select {
+    appearance: none;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    background: transparent; 
+    background-image: none; 
+}
+    
+select::-ms-expand {
+    display: none;
+}
 
-      div:focus {
-        outline: 4px solid transparent;
-      }
+div:focus {
+    outline: 4px solid transparent;
 }

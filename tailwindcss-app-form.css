@@ -1,50 +1,54 @@
-@layer components {
-    .entry-line-fluid {
-        @apply h-full w-full rounded-2xl;
-    }
+@utility entry-line-fluid {
+    @apply h-full w-full rounded-2xl;
+}
 
-    .entry-textarea-wrap {
-        @apply flex flex-row w-full items-center rounded-touch;
-    }
+@utility entry-textarea-wrap {
+    @apply flex flex-row w-full items-center rounded-touch;
+}
 
-    .entry-line-wrap {
-        @apply flex flex-row w-full px-2 items-center;
-    }
+@utility entry-line-wrap {
+    @apply flex flex-row w-full px-2 items-center;
+}
 
-    .el-textarea {
-        @apply w-full p-0 pl-2 py-3 rounded-touch;
-    }
+@utility el-textarea {
+    @apply w-full p-0 pl-2 py-3 rounded-touch;
+}
 
-    .el-textarea-layer-1:focus {
-        border-color: hsl(var(--layer-1-surface-focus));
-    }
-    
-    .el-textarea {
-        width: 100%;
-        height: max-content;
-        outline: none;
-        border-radius: 1rem;
-        text-wrap: wrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
+.el-textarea-ly1:focus {
+    border-color: hsl(var(--ly1-focus));
+}
 
-    .el-input {
-        @apply input w-full p-0;
-    }
+.el-textarea {
+    width: 100%;
+    height: max-content;
+    outline: none;
+    border-radius: 1rem;
+    text-wrap: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
-    .el-textarea,
-    .el-select,
-    .el-input {
-        @apply flex flex-row w-full p-0 justify-center items-center border-0 focus:border-0 outline-0 focus:outline-0 bg-transparent disabled:bg-transparent font-sans font-[400] placeholder:font-[400] text-form_base;
-    }
+@utility el-input {
+    @apply input w-full p-0;
+}
 
-    .el-select-centered {
-        @apply text-center [text-align-last:center];
-    }
+@utility el-input {
+    @apply flex flex-row w-full p-0 justify-center items-center border-0 focus:border-0 outline-0 focus:outline-0 bg-transparent disabled:bg-transparent font-sans font-[400] placeholder:font-[400] text-form_base;
+}
 
-    .el-re {
-        @apply ease-in-out transition-all;
-    }
+@utility el-select {
+    @apply flex flex-row w-full p-0 justify-center items-center border-0 focus:border-0 outline-0 focus:outline-0 bg-transparent disabled:bg-transparent font-sans font-[400] placeholder:font-[400] text-form_base;
+}
+
+@utility el-textarea {
+    @apply flex flex-row w-full p-0 justify-center items-center border-0 focus:border-0 outline-0 focus:outline-0 bg-transparent disabled:bg-transparent font-sans font-[400] placeholder:font-[400] text-form_base;
+}
+
+@utility el-select-centered {
+    @apply text-center [text-align-last:center];
+}
+
+@utility el-re {
+    @apply ease-in-out transition-all;
 }
