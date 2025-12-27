@@ -1,3 +1,35 @@
+:root {
+    background-color: #000000;
+}
+
+html {
+    @apply select-none cursor-none;
+}
+
+select:focus {
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+div:focus {
+    outline: 4px solid transparent;
+}
+
 .scroll-hide::-webkit-scrollbar {
     display: none;
 }
@@ -35,8 +67,4 @@
     width: 100%;
     height: 100%;
     flex: 1 0 100%;
-}
-
-@utility opacity-active {
-    @apply active:opacity-80 group-active:opacity-80;
 }
